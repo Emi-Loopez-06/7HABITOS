@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    pad: 0;
+    }
+    
+    body {
+        background-color:palegreen;
+    }
+    
+    .contenedor {
+        width: 90%;
+        max-width: 1200 px;
+        margin: 20px auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+    
+    .contenedor > div {
+        background-color: rgb(212, 100, 100);
+        padding: 20px;
+        border-radius: 4px;
+    }
+    
+    .contenedor .header {
+        background-color: rgb(230, 5, 80);
+        color: cornflowerblue;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    
+    .contenedor .contenido {
+        grid-column: span 2;
+        background-color: rgb(37, 126, 129);
+    }
+    
+    .contenedor .sidebar {
+        background-color: rgb(174, 0, 255);
+        grid-row: span 2; 
+    }
+    
+    .contenedor .widget-1, 
+    .contenedor .widget-2 {
+        background-color: yellow;
+        color: greenyellow;
+    }
+    
+    .contenedor .footer {
+        background-color:red;
+        color: lightyellow;
+        grid-column: span 3;
+    }
+    
+    @media screen and (max-width: 758px) {
+        body { 
+            background-color:blueviolet;
+        }
+    
+        .contenedor .contenido {
+            grid-column: 1 / -1;
+        }
+    
+        .contenedor .sidebar {
+            grid-column: 1 / -1;
+        }
+    
+        .contenedor .widget-1 {
+            grid-column: span 2;
+        }
+    }
+    .barra{
+        background-color: aquamarine;
+    }
+    
+    .barra ul {
+        list-style:  none; 
+    }
+    
+    .barra ul li {
+       display: inline-block;
+    }
+    
+    h1{
+        font-family: 'Akaya Telivigala', cursive;
+    }
+    .barra ul li a {
+    text-decoration:none;
+    display: block;
+    color: white;
+    padding: 20px;
+    }
+    
+    .barra ul li a:hover{
+        background-color: violet;
+    }
+    h2{
+        font-family: 'Akaya Telivigala', cursive;
+    }
+    .barra ul li a {
+    text-decoration:none;
+    display: block;
+    color: white;
+    padding: 20px;
+    }
+    
+    .barra ul li a:hover{
+        background-color: violet;
+    }
+    h3{
+        font-family: 'Akaya Telivigala', cursive;
+    }
+    .barra ul li a {
+    text-decoration:none;
+    display: block;
+    color: white;
+    padding: 20px;
+    }
+    
+    .barra ul li a:hover{
+        background-color: violet;
+    }
+    h5{
+        font-family: 'Akaya Telivigala', cursive;
+    }
+    .barra ul li a {
+    text-decoration:none;
+    display: block;
+    color: white;
+    padding: 20px;
+    }
+    
+    .barra ul li a:hover{
+        background-color: violet;
+    }
